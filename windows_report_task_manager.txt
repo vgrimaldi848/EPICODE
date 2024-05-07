@@ -1,0 +1,85 @@
+CPU
+
+	11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+
+	Base speed:	2.50 GHz
+	Sockets:	1
+	Cores:	8
+	Logical processors:	16
+	Virtualization:	Enabled
+	L1 cache:	640 KB
+	L2 cache:	10.0 MB
+	L3 cache:	24.0 MB
+
+	Utilization	24%
+	Speed	2.65 GHz
+	Up time	19:14:14:33
+	Processes	406
+	Threads	6110
+	Handles	568091
+
+Memory
+
+	64.0 GB
+
+	Speed:	3200 MHz
+	Slots used:	2 of 2
+	Form factor:	SODIMM
+	Hardware reserved:	280 MB
+
+	Available	22.5 GB
+	Cached	22.6 GB
+	Committed	52.1/73.2 GB
+	Paged pool	2.3 GB
+	Non-paged pool	1.9 GB
+	In use (Compressed)	41.2 GB (3.1 GB)
+
+Disk 0 (C:)
+
+	NVMe PC711 NVMe SK hynix 512GB
+
+	Capacity:	477 GB
+	Formatted:	477 GB
+	System disk:	Yes
+	Page file:	Yes
+	Type:	SSD
+
+	Read speed	1.7 MB/s
+	Write speed	278 KB/s
+	Active time	1%
+	Average response time	0 ms
+
+GPU 0
+
+	Intel(R) UHD Graphics
+
+	Driver version:	31.0.101.4502
+	Driver date:	15.06.2023
+	DirectX version:	12 (FL 12.1)
+	Physical location:	PCI bus 0, device 2, function 0
+
+	Utilization	18%
+	Dedicated GPU memory	0.0/4.0 GB
+	Shared GPU memory	1.7/31.9 GB
+	GPU Memory	1.7/31.9 GB
+
+GPU 1
+
+	NVIDIA T1200 Laptop GPU
+
+	Driver version:	31.0.15.4659
+	Driver date:	03.01.2024
+	DirectX version:	12 (FL 12.1)
+	Physical location:	PCI bus 1, device 0, function 0
+
+	Utilization	0%
+	Dedicated GPU memory	0.0/4.0 GB
+	Shared GPU memory	0.0/31.9 GB
+	GPU Memory	0.0/35.9 GB
+
+
+
+
+
+
+
