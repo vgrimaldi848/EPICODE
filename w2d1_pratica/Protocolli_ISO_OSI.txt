@@ -1,0 +1,26 @@
+Livello 1: Fisico
+  X.25 (X.21bis · EIA/TIA-232 · EIA/TIA-449 · EIA-530 · G.703)
+
+Livello 2: Collegamento Dati
+  ISO/IEC 7666 · X.25 (LAPB) · Token Bus · X.222 · ISO/IEC 8802-2 · LLC (type 1 / 2)
+  security level is implemented by:
+    ISO/IEC 8802-2
+    LLC (type 1 / 2)
+
+Livello 3: Rete
+  ISO/IEC 8208 · X.25 (PLP) · ISO/IEC 8878 · X.223 · ISO/IEC 8473-1 · CLNP X.233 · ISO/IEC 10589 · IS-IS
+
+Livello 4: Trasporto
+  ISO/IEC 8073 · TP0 · TP1 · TP2 · TP3 · TP4 (X.224) · ISO/IEC 8602 · X.234
+
+Livello 5: Sessione
+  ISO/IEC 8327 · X.225 · ISO/IEC 9548-1 · X.235
+
+Livello 6: Presentazione
+  ISO/IEC 8823 · X.226 · ISO/IEC 9576-1 · X.236
+
+Livello 7: Applicazione
+  FTAM · X.400 · X.500 · DAP · ROSE · RTSE · ACSE · CMIP
+
+All X series publications:
+  https://www.itu.int/rec/T-REC-X/en

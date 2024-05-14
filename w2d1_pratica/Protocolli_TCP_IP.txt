@@ -1,0 +1,11 @@
+Livello 1: Collegamento Dati - no phisical layer is involved here, same as Data Link in OSI
+  MAC
+
+Livello 2: Network - equivalent to the network layer in OSI
+  ICMP · IGMP · IPv4 · IPv6
+
+Livello 3: Trasporto - equivalent to the Transport layer in OSI
+  TCP · UDP · RDP · SCTP · HDLC · RTP · QUIC
+
+Livello 4: Applicazione - includes Application, Presentation and Session layer from ISO
+  HTTP · FTP · SMTP · DHCP
