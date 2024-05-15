@@ -1,5 +1,10 @@
+--
+-- Livelli del modello TCP/IP e relativi protocolli
+--
+
 Livello 1: Collegamento Dati - no phisical layer is involved here, same as Data Link in OSI
-  MAC
+  MAC (Media Access Control)
+  LLC (Logical Link Control)
 
 Livello 2: Network - equivalent to the network layer in OSI
   ICMP · IGMP · IPv4 · IPv6
@@ -9,3 +14,57 @@ Livello 3: Trasporto - equivalent to the Transport layer in OSI
 
 Livello 4: Applicazione - includes Application, Presentation and Session layer from ISO
   HTTP · FTP · SMTP · DHCP
+  
+--
+-- Breve descrizione di alcuni protocolli TCP/IP
+--  
+  
+MAC (Media Access Control Security)
+è uno standard di sicurezza che fornisce cifratura e autenticazione a livello di collegamento dati. 
+Viene utilizzato per proteggere la comunicazione tra dispositivi su una rete locale (LAN), 
+garantendo l'integrità e la riservatezza dei dati trasmessi.
+
+LLC (Logical Link Control)
+fornisce un'interfaccia standardizzata e affidabile per la comunicazione tra il livello di rete
+e il livello di collegamento dati, garantendo la trasmissione efficiente e sicura dei dati 
+attraverso una rete di computer. (Controllo di flusso, Controllo degli Errori, Controllo di Sequenza,
+Multiplexing e Demultiplexing)
+
+ICMP (Internet Control Message Protocol)
+è un protocollo utilizzato per inviare messaggi di errore e informazioni operative tra dispositivi di rete. 
+Viene comunemente utilizzato per diagnosticare problemi di rete, ad esempio con il comando 'ping' per 
+verificare la raggiungibilità di un host.
+
+IGMP (Internet Group Management Protocol) 
+è un protocollo utilizzato per gestire la comunicazione multicast su reti IPv4. 
+Permette ai router di conoscere quali dispositivi desiderano ricevere specifici flussi di dati multicast, 
+ottimizzando così la distribuzione del traffico.
+
+IPv4 (Internet Protocol) 
+è il protocollo di rete principale utilizzato per l'instradamento del traffico su Internet. 
+Fornisce un sistema di indirizzamento unico, permettendo ai dispositivi di comunicare tra 
+loro tramite indirizzi IP a 32 bit.
+
+IPv6 (Internet Protocol versione 6) 
+è la versione più recente del protocollo Internet, progettata per sostituire IPv4. 
+Offre un sistema di indirizzamento a 128 bit, che consente un numero molto più grande 
+di indirizzi IP, migliorando scalabilità e sicurezza della rete.
+
+--
+-- Differenze tra modello ISO/OSI ed equivalente TCP/IP:
+--  
+
+La differenza principale è dovuta al fatto che il modello OSI costituisce un modello teorico 
+ed i protocolli associati si attengono ad una segmentazione a 7 strati, questo comporta una maggiore
+complessita' dei protocolli con una maggiore versatilita' rispetto ai protocolli del modello TCP/IP.
+
+Le differenze piu' rilevanti tra i due modelli sono riscontrabili a livello di trasporto e applicativo
+in realzione alla differenza di applicazioni disponibili nel momento in cui i due modelli si sono diffusi.
+Il modello OSI infatti prevede una serie di protocollo che sono stati rimpiazzati dai pooiu' moderni FTP, HTTP, etc.
+
+
+
+
+
+
+
