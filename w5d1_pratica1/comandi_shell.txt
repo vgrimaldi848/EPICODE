@@ -1,0 +1,45 @@
+pwd -> /home/kali
+
+1. Creazione struttura directories
+
+mkdir ~/dos
+mkdir ~/studenti
+mkdir ~/windows
+mkdir ~/studenti/matteo/amici -p
+mkdir ~/studenti/anna/casa  -p
+mkdir ~/studenti/nicola/lavoro  -p
+mkdir ~/studenti/nicola/scuola  -p
+mkdir ~/tmp
+
+2. Creazione dei files
+
+touch ~/tmp/risultati.doc
+touch ~/studenti/nicola/scuola/compito.doc
+touch ~/studenti/nicola/scuola/relazione.doc
+
+3. Spostamento alla directory LAVORO:
+
+cd ~/studenti/nicola/lavoro
+
+4. Spostamento alla cartella CASA:
+
+cd  ~/studenti/anna/casa   // cd ../../anna/casa
+
+5. Copia e spostamento dei files alla cartella corrente:
+
+cp ~/studenti/nicola/scuola/compito.doc ./
+mv ~/studenti/nicola/scuola/relazione.doc ./
+
+6. Rimozione cartella /tmp
+
+rm ~/tmp -r
+
+7. Creazione del nuovo file e cambio privilegi:
+
+touch ~/studenti/nicola/lavoro/pippo.txt
+chmod 311 ~/studenti/nicola/lavoro/pippo.txt
+
+8. Nascondere i files nelle cartella CASA:
+
+mv ~/studenti/anna/casa/compito.doc ~/studenti/anna/casa/.compito.doc
+mv ~/studenti/anna/casa/relazione.doc ~/studenti/anna/casa/.relazione.doc
