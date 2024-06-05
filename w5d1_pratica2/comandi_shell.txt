@@ -1,0 +1,29 @@
+pwd -> /home/kali/studenti/nicola
+
+j. cambiamento attributi directory lavoro
+
+chmod 100 ./lavoro
+
+k. entra e crea il file emacs
+
+touch emacs
+
+l. prova a visualizzare il contenuto e poi cambia i permessi per poter leggerne il contenuto
+
+ls -> ls: cannot open directory '.': Permission denied
+chmod 500 ./
+ls -> mostra la cartella emacs
+
+m. Spostati alla cartella scuola
+
+cd ../scuola
+
+n. crea una cartella nascosta mia con privilegi validi solo per l'utente:
+
+mkdir .mia
+chmod 700 ./mia
+
+o) prova ad eseguire ls e poi ls -al
+
+il comando ls mostra: compito.doc e relazione.doc
+il comando ls -al mostra: compito.doc, relazione.doc e la cartella nascosta .mia
