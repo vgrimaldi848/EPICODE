@@ -23,23 +23,45 @@ cd ~/studenti/nicola/lavoro
 
 4. Spostamento alla cartella CASA:
 
-cd  ~/studenti/anna/casa   // cd ../../anna/casa
+cd  ~/studenti/anna/casa
+cd ../../anna/casa
 
-5. Copia e spostamento dei files alla cartella corrente:
+a. Copia dei files alla cartella corrente:
 
 cp ~/studenti/nicola/scuola/compito.doc ./
+
+b. Spostamento dei files alla cartella corrente:
+
 mv ~/studenti/nicola/scuola/relazione.doc ./
 
-6. Rimozione cartella /tmp
+c. Rimozione cartella /tmp
 
 rm ~/tmp -r
 
-7. Creazione del nuovo file e cambio privilegi:
+d. Creazione del nuovo file e cambio privilegi:
 
 touch ~/studenti/nicola/lavoro/pippo.txt
-chmod 311 ~/studenti/nicola/lavoro/pippo.txt
 
-8. Nascondere i files nelle cartella CASA:
+e. Cambio privilegi:
 
-mv ~/studenti/anna/casa/compito.doc ~/studenti/anna/casa/.compito.doc
-mv ~/studenti/anna/casa/relazione.doc ~/studenti/anna/casa/.relazione.doc
+chmod 644 ~/studenti/nicola/lavoro/pippo.txt
+
+f. Nascondere i files nelle cartella ANNA:
+
+mv ~/studenti/anna/ ~/studenti/.anna/
+
+g. Spostarsi nella cartella lavoro e visualizzare il contenuto del file pippo
+
+cd ~/studenti/nicola/lavoro
+cat pippo.txt
+
+h. Rimuovere la cartella amici
+
+rmdir ~/studenti/matteo/amici
+
+i. Rimuovere tutte le cartelle create
+
+rm ~/dos -r
+rm ~/studenti -r
+rm ~/windows -r
+rm ~/tmp -r
