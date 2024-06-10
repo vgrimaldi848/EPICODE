@@ -12,7 +12,7 @@ float areaCer(float diametro) {
 }
 
 float areaTre(float lato) {
-	float areaTre( {(sqrt(3)/4)*lato*lato});
+	float areaTre{(sqrt(3)/4)*lato*lato};
 	return areaTre;
 }
 
@@ -23,13 +23,13 @@ int main() {
 	scanf("%f", &dVal);
 	printf("\n");
 
-	printf("L’area del quadrato di lato D: %f", areaQuad(dVal));
+	printf("L\'area del quadrato di lato D: %f", areaQuad(dVal));
 	printf("\n");
 
-	printf("L’area del cerchio di diametro D: %f", areaCer(dVal));
+	printf("L\'area del cerchio di diametro D: %f", areaCer(dVal));
 	printf("\n");
 
-	printf("L’area del triangolo equilatero di lato D: %f", areaTre(dVal));
+	printf("L\'area del triangolo equilatero di lato D: %f", areaTre(dVal));
 	printf("\n");
 
 	return 0;
