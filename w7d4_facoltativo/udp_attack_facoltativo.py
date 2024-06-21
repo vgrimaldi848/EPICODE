@@ -1,6 +1,7 @@
 import socket
 import random
 import string
+from time import sleep
 
 debug = False
 
@@ -12,6 +13,9 @@ def gen_random_packet(packetSize=1024):
   while len(frame) < packetSize:
     frame += random.choice(string.hexdigits)
   return frame
+
+def get_delay():
+  return random.uniform(0, 0.1)
 
 def main():
   global debug
@@ -32,6 +36,7 @@ def main():
     while 1:
       try:
         s.sendall(gen_random_packet().encode())
+        sleep(get_delay())
       except KeyboardInterrupt:
         print("Esecuzione terminata")
         break
@@ -39,6 +44,7 @@ def main():
     print(f"Invio di {packetNum} pacchetti")
     for i in range(0, packetNum,1):
         s.sendall(gen_random_packet().encode())
+        sleep(get_delay())
 
 if __name__ == '__main__':
   main()
