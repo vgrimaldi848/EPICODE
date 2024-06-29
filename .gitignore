@@ -6,3 +6,5 @@ w5d4_pratica/facoltativo/esercizio_2.o
 w6d1_pratica/game.exe
 w6d1_pratica/game.o
 w7d4_pratica.py
+portScannerUDP.py
+fakeServerUDP.py
