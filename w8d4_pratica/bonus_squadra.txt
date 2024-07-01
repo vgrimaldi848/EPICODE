@@ -1,0 +1,52 @@
+--
+-- Steganografia
+--
+
+La steganografia e' una tecnica utilizzata per mascherare dati all'interno di altri dati al fine di garantire l'accesso 
+solamente ad un gruppo di persone che sono a conoscenza dell'esistenza di tali dati e a conoscenza delle modalita' di 
+lettura degli stessi.
+
+La steganografia si differenzia dalla criptazione in quanto i dati criptati non sono riconducibili ai dati originali ne
+sembrano essere dotati di un senso logico. Nel caso della steganografia invece, il dato viene nascosto in altri tipi di 
+informazione come immagini, testi, ecc. 
+
+--
+-- Linguaggi Esoterici
+--
+
+Si tratta di lingaggi di programmazione il cui scopo applicativo e' spesso limitato (ad esempio limitati alla modifica di array di memoria mediante puntatori)
+la cui implementazione e' spesso riconducibile ad una sintassi non facile da interpretare e da legger se non per coloro i quali conoscono
+quel tipo di linguaggio.
+
+La possibilita' di integrare questi linguaggi di programmazione mediante interpreti integrati in altri linguaggi di programmazione consente
+di nascondere la sintassi e il codice eseguito rendendo piu' complessa la possibilita' di indentificare il codice e le operazioni che questo
+esegue sul sistema.
+
+Molti linguaggi hanno una diffusione limitata e sono nati per motivi prettamente goliardici, altri invece sono diventui molto comuni 
+nella comunita' della rete, non solo per la programmazione ma anche per nascondere informazioni.
+
+--
+-- Esempi di programmi scritti con linguaggi esoterici
+--
+
+Un linguaggio di programmazione esoterico e' ad esempio Brainf**k, di seguito proponiamo un esempio di programma Hello, World! scritto 
+con questo linguaggio:
+
+>++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<+
++.------------.>++++++[<+++++++++>-]<+.<.+++.------.--------.>>>++++[<++++++++>-
+]<+.
+
+Allo stesso modo, un ulteriore linguaggio di programmazione esoterico e' "Cow" in cui i comandi sono costituiti dalla traslitterazione della
+parola moo, in questo linguaggio il programma Hello, World! sarebbe implementato come segue:
+
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO Moo MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo MoO MoO
+ MoO MoO MoO MoO MoO Moo Moo MoO MoO MoO Moo OOO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+ MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo MOo
+ MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo MOo
+ MOo MOo MOo MOo MOo Moo MOo MOo MOo MOo MOo MOo MOo MOo Moo MoO MoO MoO Moo MOo MOo MOo MOo MOo MOo Moo MOo MOo MOo MOo MOo MOo MOo MOo Moo
+ OOO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo 
