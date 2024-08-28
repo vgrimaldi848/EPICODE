@@ -1,0 +1,42 @@
+--- NULL Session ---
+
+Le NULL Session sono delle potenziali vulnerabilita' tipiche dei sistemi opeativi Windows piu' datati quali Windows 2000 e Windows XP.
+
+La vulnerabilita' coniste nella possibilita' che un attaccante si connetta senza dichiarare alcun utente e password e in tal modo acceda
+alle share disponibili sul sistema e alla cartella IPC$ che contiene informazioni sulla comunicazione tra processi in esecuzione.
+
+Sistemi operative piu' recenti di quelli elencati in precedenza sono generalmente esenti da questo tipo di vulnerabilita' a patto che la 
+configurazione del sistema non venga deliberatamente alterata rendendole efficaci.
+
+Le possibilita' di mitigazione sono ovviamente collegate alla frequenza degli aggiornamenti di sistema e alla appropiata configurazione
+delle condivisioni di rete. A tal fine la configurazione dei servizi di condivisione dovrebbe escludere esplicitamente la possiblita' di
+connessioni senza la dichiarazione di utente e password.
+
+
+
+-- ARP Poisoning --- 
+
+La tecnica di ARP Poisoning rientra nel caso del "Man in the middle" ovvero di quelle tecniche volte ad intercettare le connessioni tra due host con una terza macchina in modo da far credere ai sistemi attaccati di essere uno o l'altra macchina. 
+
+Al fine di avere l'effetto desiderato e di non bloccare la comunicazione tra i due host, la macchina attaccante deve essere predisposta al forwarding 
+dei pacchetti in modo tale da non interrompere la connessione tra gli attaccati.
+
+L'ARP Poisoning, come suggerisce il none, sfrutta la vulnerabilita' del protocollo ARP utilizzato per la network discovery nel momento in cui un
+dispositivo di rete interroga le machine ad esso connesse per dedfinire la tabella MAC-IP.  
+
+L'attaccante di fatto "suggerisce" in questo attacco di essere il MAC associato all'IP dell'attaccato. 
+
+La vulnerabilita' per la natura stessa dell'attacco richiede di non utilizzare il network discovery del protocollo ARP di fatto affidandosi 
+a tabelle MAC IP statiche, ma in questo caso, l'aggiunta di un nuovo dispositivo sulla rete richiede l'inserimento manuale della coppia MAC - IP 
+nelle tabelle. 
+
+Qualora questa soluzione non sia praticabile o limitante, la vulnerabilita' puo' essere prevenuta "accettando" il rischio di spoofind ma 
+limitando la leggibilita' dei dati mediante criptazione e protocolli sicuri come HTTPS, SSH e VPN. 
+
+--- Facoltativo --- 
+
+Volendo quantizzare l'efforto relativo alla mitigazione/eliminazione delle suddette vulnerabilita', questa ovviamente dipende dal numero di host 
+della rete e dal tipo di Sistema operativo impiegato. In genere, possiamo speculare che limitare l'ARP Poisoning su reti di grandissime dimensioni 
+e che non utilizzino protocolli sicuri sia particolarmente sfidante. 
+
+L'impementazione di soluzioni di mitigazione anche mediante IDS risulterebbe estremamente oneroso.  
