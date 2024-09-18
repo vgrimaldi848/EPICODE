@@ -1,0 +1,3 @@
+Sebbene il firewall sia disattivato sembra che i risultati siano meno dettagliati di quando il firewall e' attivo,
+eventualmente con il firewall attivo nmap deve effettuare una scansione piu' precisa in maniera indiretta d ottiene 
+informazioni piu' accurate?
