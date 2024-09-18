@@ -1,0 +1,18 @@
+-- esecuzione_BOIF.png
+
+Nell'esecuzione del programma originale possiamo notare alcune important informazioni:
+1. Il programma stampa e mostra ben piu' dei 10 caratteri con cui e' stato dichiarato il buffer
+2. Nella versione attuale non viene mostrato un errore a terminale
+3. L'esecizione del programma termina con stato 3221225642 che non'e' zero
+4. L'esecuzione del programma e' durata 15.63 ms 
+
+-- esecuzione_BOIFfixed.png
+
+L'esecuzione del programma irrobustito contro il BOF inceve:
+1. I caratteri mostrati e inserti nel buffer sono al piu' la lunghezza del vettore del buffer
+2. Il programma termina e restituisce 0, quindi e' stato eseguito correttamente
+3. L'esecuzione del programma ha impiegato 0 ms.
+4. L'uso di un ulteriore funzione per il controllo del buffer ha incrementato l'uso i memoria a 712 HB.
+
+
+
