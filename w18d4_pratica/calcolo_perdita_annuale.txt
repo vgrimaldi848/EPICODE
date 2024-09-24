@@ -1,0 +1,55 @@
+Perdita Annuale in caso di:
+
+1. Inondazione su "edificio secondario"
+2. terremoto su "datacenter"
+3. Incendio su "edificio primario"
+4. incendio su "edificio secondario"
+
+Assets 
+Edifico Primario	350000
+Edificio Secondario	150000
+Datacenter		100000
+
+Evento		
+Terremoto 		1/30 anni
+Incendio		1/20 anni
+Inondazione		1/50 anni
+
+Exposure Factor
+  Edificio Primario
+    Terremoto	0.80
+    Incendio 	0.60
+    Inondazione	0.55
+  Edificio Secondario
+    Terremoto	0.80
+    Incendio 	0.50
+    Inondazione	0.40
+  Datacenter
+    Terremoto	0.95
+    Incendio 	0.60
+    Inondazione	0.35
+
+--- Soluzione ---
+
+SLE = AV x EF
+ALE = SLE x ARO
+
+dove: SLE Single Loss Expectancy, AV Asset Value, EF Exposure Factor, ARO Annualized Rate of Occurrence e ALE Annualized Loss Expectancy.
+
+Per i tre scenari di cui sopra:
+
+Caso 1:
+SLE = 150000 x 0.40 = 60000
+ALE = 60000 x (1/50) = 1200
+
+Caso 2:
+SLE = 100000 x 0.95 = 95000
+ALE = 95000 x (1/30) = 3166.66
+
+Caso 3:
+SLE = 350000 x 0.60 = 210000
+ALE = 210000 x (1/20) = 10500
+
+Caso 4:
+SLE = 150000 x 0.60 = 75000
+ALE = 75000 x (1/20) = 3750
