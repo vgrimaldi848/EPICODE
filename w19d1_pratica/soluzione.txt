@@ -1,0 +1,11 @@
+La valutazione ThreatConnect utilizza due indicatori:
+
+1. Threat Rating 
+  Misura la perciolosita' di una minaccia  con una scala che va da 1 a 5. Il punteggio viene assegnato proporzionalmente al grado di rischio 
+  che la minaccia venga attuata, valori bassi possono essere depriorizzati  favore di quelli con punteggio piu' elevato. Una minaccia valutata
+  come 5 rappresenta una criticita' da contrastare con la massima priorita'
+ 
+2. Confidence Threat 
+  Rappresenta il grado di affidabilita' della valutazione del rischio di una minaccia, valori bassi indicano un risultato non verificato o 
+  parzialmente verificato. Un valore basso invece indica che la valutazione del rischio e' stata verificata direttamente (es. eseguire uno script 
+  per verificare che una macchina Windows sia soggetta al bug Ethernalblue).
