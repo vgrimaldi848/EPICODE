@@ -1,0 +1,42 @@
+Domande
+
+1. Azioni preventive: 
+  quali azioni preventive si potrebbero implementare per difendere lʼapplicazione Web da attacchi di tipo 
+  SQLi oppure XSS da parte di un utente malintenzionato? Modificate la figura in modo da 
+  evidenziare le implementazioni
+
+  Al fine di migliorare la sicurezza della rete potrebbero essere utilizzate diverse modalita' di difesa, in primis
+  sarebbe opportuno segmentare ulterioremente la rete mediante la segmentazione della zona DMZ in modo tale che la 
+  comunicazione alla piattaforma di e-commerce venga isolata e non consenta l'accesso alla rete interna.
+
+  Come ulteriore possibilita' sarebbe opportuno disporre di un sistema di firewall avanzato come Cloudflare che 
+  isoli ulteriormente il sito web da eventuali minacce
+
+2. Impatti sul business: 
+  lʼapplicazione Web subisce un attacco di tipo DDoS dallʼesterno che rende lʼapplicazione non raggiungibile 
+  per 10 minuti. Calcolare lʼimpatto sul business dovuto alla non raggiungibilità del servizio, considerando 
+  che in media ogni minuto gli utenti spendono 1.500 € sulla piattaforma di e-commerce. Fare eventuali valutazioni 
+  di azioni preventive che si possono applicare in questa problematica:
+
+  L'impatto sul business e' dato dal mancato realizzo durante il periodi di indisponibilita' dell'applicazione
+  e-commerce, in tal caso 1500 x 10 = 15.000 EUR.
+
+  Eventuali soluzioni per irrobustire il sistema contro attacchi DDoS sono, ancora una volta, l'utilizzo di un sistema
+  di firewall avanzato come Cloudflare o, in alternativa, l'utilizzo di un sistema di Content Delivery Network (CDN) in cui 
+  la maggior richiesta di traffico web viene gestita replicando opportunamente le risorse. Tale soluzione potrebbe essere 
+  idonea se il costo del servizio CDN e' inferiore al costo dovuto al mancato realizzo per l'indisponibilita' dell'infrastruttura,
+  nel nostro caso se il costo del CDN per 10 minuti e' inferiore a 15.000 Euro (altamente probabile).
+
+3. Response: 
+  lʼapplicazione Web viene infettata da un malware. La vostra priorità è che il malware non si propaghi sulla vostre rete
+  , mentre non siete interessati a rimuovere lʼaccesso da parte dellʼattaccante alla macchina infettata. Modificate la 
+  figura in slide 2 con la soluzione proposta.
+
+  In questo caso la soluzione piu' rapida per limitare l'accesso alla rete interna ma lasciare attivo il servizio e-commerce
+  sarebbe quello di utilizzare una rete di quarantena come da immagine proposta.
+
+4. Soluzione completa:
+  Vedi immagine allegata
+
+5. Modifica «più aggressiva» dellʼinfrastruttura (se necessario/facoltativo magari integrando la soluzione al punto 2)
+  
