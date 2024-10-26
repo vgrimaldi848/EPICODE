@@ -1,0 +1,26 @@
+Domanda:
+
+Alcuni dei miei computer sono stati infettati da un ransomware, dopo alcuni minuti dal login l'utente non puo' piu' effettuare azioni e un prompt che richiede un riscatto compare e non puo' essere eliminato.
+
+Risposta:
+
+Mi dispiace molto sentire che i tuoi computer sono stati infettati da ransomware. È una situazione davvero frustrante e preoccupante. Ecco alcuni passi che puoi seguire per cercare di risolvere il problema:
+
+1. Isolare i dispositivi infetti: 
+Disconnetti immediatamente i computer infetti dalla rete per evitare che il ransomware si diffonda ad altri dispositivi
+
+2. Identificare il tipo di ransomware: 
+Utilizza uno strumento come Crypto Sheriff per identificare il tipo di ransomware che ha infettato i tuoi computer
+
+3. Rimuovere il malware: 
+Scarica e installa un software antivirus o anti-malware affidabile come Kaspersky o Malwarebytes. Esegui una scansione completa del sistema per rilevare e rimuovere il ransomware
+
+4. Utilizzare uno strumento di decriptazione: 
+Se il ransomware ha criptato i tuoi file, puoi provare a utilizzare uno strumento di decriptazione gratuito come quelli offerti da Kaspersky
+
+5. Ripristinare i dati: 
+Se hai un backup dei tuoi dati, ripristinalo una volta che il ransomware è stato rimosso
+
+Se non riesci a risolvere il problema da solo, potrebbe essere utile contattare un professionista della sicurezza informatica.
+
+Spero che queste informazioni ti siano utili. Se hai altre domande o hai bisogno di ulteriori dettagli, fammi sapere!

@@ -1,0 +1,18 @@
+Domanda:
+
+In base ai dati pubblicati alla pagina web:
+
+https://www.verizon.com/business/resources/reports/dbir/
+
+puoi fornire:
+1. un riassunto dle report
+2. un estratto che riassuma specificamente la situazione inerente phishing e social engineering.
+
+Risposta:
+
+-- Riassunto del Report 2024 del Verizon DBIR
+Il 2024 Data Breach Investigations Report (DBIR) di Verizon evidenzia un aumento significativo degli attacchi che sfruttano le vulnerabilità, con un incremento del 180% rispetto all'anno precedente. Questi attacchi sono principalmente condotti da attori di ransomware e altre minacce legate all'estorsione. Circa un terzo di tutti i casi di violazione coinvolge ransomware o tecniche di estorsione. Inoltre, le attività di estorsione pura sono aumentate, rappresentando ora il 9% di tutte le violazioni. Un terzo delle violazioni coinvolge terze parti o fornitori, come le catene di fornitura software, le infrastrutture di hosting o i custodi dei dati. Le violazioni causate da errori umani, come inganni sociali o errori finanziari, continuano a rappresentare una parte significativa delle violazioni.
+
+-- Estratto sulla Situazione di Phishing e Social Engineering
+Il report del 2024 sottolinea che pretexting e phishing via email continuano a essere le cause principali di incidenti di sicurezza. Gli attori mirano spesso agli utenti utilizzando catene di email esistenti e contesti familiari. In particolare, il 73% degli incidenti di social engineering coinvolge phishing e pretexting via email. Le tecniche di social engineering, come pretexting e phishing, sono ancora comunemente utilizzate, con più del 40% degli incidenti che coinvolge pretexting e il 31% phishing.
+
