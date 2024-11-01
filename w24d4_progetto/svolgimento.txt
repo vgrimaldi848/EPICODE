@@ -1,0 +1,62 @@
+Svolgimento:
+
+1. Iniziamo con importare i dati, a tal proposito dalla home possiamo scorrere in basso nella sezione "Splunk recommended". Nella lista e relative icone 
+  clicckiamo su "Add data". (screen 001).
+
+2. Nella nuova interffaccia dobbiamo selezionare la modalita' di import dei dati. Essendo il file salvato sul disco perche' precedentemente scaricato 
+  dal sito dei tutorial di Splunk, procediamo con l'identifcare il file nella cartella download ed osserviamo la nuova interfaccia che ci viene proposta.
+
+3. Una volta selezionato il file, essendo il file in formato ZIP, Splunk ci notifica dell'impossibilita' di visualizzare una preview dei dati, per 
+  completare l'import procediamo con il cliccare su "Next" in alto a destra.
+
+4. Nella nuova schermata, splunk ci chiede di configurare alcuni parametri tra cui come attribuire il valore della variabile "host", a tal proposito
+  viene automaticamente proposto l'hostname che sta eseguendo splunk. Cambiamo l'opzione in modo che sia estratto dal segment 1 del logfile. Clicchiamo su
+  review e poi "Review" per verificare l'esito dell'import.
+
+5. Una volta completato l'import Splunk ci porta direttamente nella schermata di ricerca e ci mostra informazioni sintetiche sui dati come i campi piu' comuni e 
+  la distribuzione temporale degli eventi.
+
+Procediamo ora con i quesiti:
+
+--
+-- Q1: Crea una query Splunk per identificare tutti i tentativi di accesso falliti "Failed password". 
+-- La query dovrebbe mostrare il timestamp, l'indirizzo IP di origine, il nome utente e il motivo del fallimento.
+--
+
+source="tutorialdata.zip:*" "Failed password" | rex "^(?<timestamp>.{3} .{3} \d+ \d{4} \d{2}:\d{2}:\d{2}) .+ .+\[(?<error_code>.+)\]: Failed password for(?: invalid user)? (?<username>.+) from (?<hostname>.+) port (?<port>\d+) .+" | table timestamp error_code username hostname port
+
+con il commando precedente abbiamo estratto mediante regular expression una lista di attribute dal log e ne abbiamo poi creato una tabella in uscita. Da notare che la stringa puo' cambiare a seconda se il nome utente esiste o meno.
+
+--
+-- Q2: Scrivi una query Splunk per trovare tutte le sessioni SSH aperte con successo. La query dovrebbe filtrare per l'utente “djohnsonˮ 
+--     e mostrare il timestamp e l'ID utente.
+
+source="tutorialdata.zip:*" "sshd:session"  "opened" "djohnson" | rex "^(?<timestamp>.{3} .{3} \d+ \d{4} \d{2}:\d{2}:\d{2}) .+ user (?<username>.+) by.+$" | table timestamp, username
+
+--
+-- Q3: Scrivi una query Splunk per trovare tutti i tentativi di accesso falliti provenienti dall'indirizzo IP “86.212.199.60ˮ. 
+-- La query dovrebbe mostrare il timestamp, il nome utente e il numero di porta.
+--
+
+source="tutorialdata.zip:*" "from 86.212.199.60" | rex "^(?<timestamp>.{3} .{3} \d+ \d{4} \d{2}:\d{2}:\d{2}) .+ .+\[(?<error_code>.+)\]: Failed password for(?: invalid user)? (?<username>.+) from (?<hostname>.+) port (?<port>\d+) .+" | table timestamp username  port
+
+--
+-- Q4: Crea una query Splunk per identificare gli indirizzi IP che hanno tentato di accedere ("Failed password") al sistema più di 5 volte. 
+-- La query dovrebbe mostrare l'indirizzo IP e il numero di tentativi.
+--
+
+source="tutorialdata.zip:*" "Failed password" 
+| rex "^(?<timestamp>.{3} .{3} \d+ \d{4} \d{2}:\d{2}:\d{2}) .+ .+\[(?<error_code>.+)\]: Failed password for(?: invalid user)? (?<username>.+) from (?<hostname>.+) port (?<port>\d+) .+" 
+| stats distinct_count(timestamp) as numEvents  by hostname 
+| where numEvents >= 5
+
+--
+-- Q5: Crea una query Splunk per trovare tutti gli Internal Server Error.  
+-- 
+
+source="tutorialdata.zip:*" | regex ".*HTTP 1.1\" 500.*"
+
+oppure 
+
+source="tutorialdata.zip:*" "HTTP 1.1\" 500"
+
